@@ -199,7 +199,7 @@ val_path = "boolq_data/boolq_val.csv"
 train = pd.read_csv(train_path)
 print (train.head())
 
-tokenizer = T5Tokenizer.from_pretrained('t5-base')
+tokenizer = T5Tokenizer.from_pretrained('t5-small')
 
 
 class BooleanDataset(Dataset):
