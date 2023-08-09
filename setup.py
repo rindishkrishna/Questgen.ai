@@ -5,7 +5,7 @@ setup(name='Questgen',
       description='Question generator from any text',
       author='Questgen contributors',
       author_email='rindishkrishna@gmail.com',
-      packages=['Questgen', 'Questgen.encoding'],
+      packages=['Questgen','Questgen.mcq'],
       url="https://github.com/rindishkrishna/Questgen.ai.git",
       install_requires=[
             'torch==2.0.1',
@@ -26,5 +26,5 @@ setup(name='Questgen',
             'pandas==1.5.3',
             'sentencepiece==0.1.99'
       ],
-      package_data={'Questgen': ['questgen.py', 'train_gpu.py', 'encoding.py']}
+      package_data={'Questgen': ['questgen.py', 'mcq.py', 'train_gpu.py']}
       )
