@@ -38,7 +38,7 @@ class QGen:
         
         
         self.tokenizer = T5Tokenizer.from_pretrained('t5-small')
-        model = T5ForConditionalGeneration.from_pretrained('Parth/result')
+        model = T5ForConditionalGeneration.from_pretrained('t5-small')
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         model.to(device)
         # model.eval()
@@ -249,7 +249,7 @@ class AnswerPredictor:
           
     def __init__(self):
         self.tokenizer = T5Tokenizer.from_pretrained('t5-small')
-        model = T5ForConditionalGeneration.from_pretrained('Parth/boolean')
+        model = T5ForConditionalGeneration.from_pretrained('t5-small')
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         model.to(device)
         # model.eval()
